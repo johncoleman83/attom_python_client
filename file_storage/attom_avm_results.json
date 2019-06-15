@@ -1,0 +1,324 @@
+{
+  "homes":
+  [
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-6-14T04:52:15",
+        "transactionID": "2d6ad636-e499-4896-8323-38aa43ab13f9"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 3893575717043,
+            "fips": "17043",
+            "apn": "0903400015",
+            "attomID": 38935757
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.2502,
+            "lotsize2": 10899
+          },
+          "area": {
+            "countrysecsubd": "DuPage County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "266 WOODSTOCK AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "266 WOODSTOCK AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "2825",
+            "postal3": "C003"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.808124",
+            "longitude": "-87.963844",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, MT30001048, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "ABSENTEE(MAIL AND SITUS NOT =)",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1959,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "DAWNS RESUB OF LOTS 12 & 13 BLK 2 A T MC INTOSH & COS WESTMONT ACRES SE 1/4 SEC 3 38 11"
+          },
+          "utilities": {
+            "walltype": "WOOD"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 1820,
+              "grosssize": 1820,
+              "grosssizeadjusted": 1580,
+              "groundfloorsize": 0,
+              "livingsize": 1580,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1580
+            },
+            "rooms": {
+              "bathstotal": 3,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 240,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "parking": {
+              "prkgSize": 288,
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "levels": 1,
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-3-22",
+            "amount": {
+              "scr": 85,
+              "value": 398100,
+              "high": 444700,
+              "low": 339500,
+              "fsd": 15
+            }
+          },
+          "sale": {
+            "buyerName": "JAHEDI,FARSHID",
+            "sellerName": "RYAN PENNY A TRUST",
+            "salesearchdate": "2005-2-18",
+            "saleTransDate": "2005-2-18",
+            "mortgage": {
+              "FirstConcurrent": {
+                "amount": 316000
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 395000,
+              "salerecdate": "2005-2-25",
+              "saledisclosuretype": 0,
+              "saledocnum": "0000038632",
+              "saletranstype": "Resale"
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 250
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 133500
+            },
+            "market": {
+              "mktttlvalue": 400500
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "JAHEDI",
+              "firstnameandmi": "F"
+            },
+            "owner2": {
+              "lastname": "JAHEDI",
+              "firstnameandmi": "M N"
+            },
+            "absenteeownerstatus": "A",
+            "mailingaddressoneline": "33 RESERVOIR RD, WHITE PLAINS NY 106032525"
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-6-14T04:21:48",
+        "transactionID": "534475c1-417f-4d20-9bff-a87023728c64"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 1624176617043,
+            "fips": "17043",
+            "apn": "0910219016",
+            "attomID": 16241766
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.2218,
+            "lotsize2": 9660
+          },
+          "area": {
+            "countrysecsubd": "DuPage County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "7 TUTTLE AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "7 TUTTLE AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "1153",
+            "postal3": "C005"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.796229",
+            "longitude": "-87.961288",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, MT30001048, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1972,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "MC INTOSH CLARENDON HILLS SUB"
+          },
+          "utilities": {
+            "walltype": "WOOD"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 2395,
+              "grosssize": 2395,
+              "grosssizeadjusted": 1585,
+              "groundfloorsize": 0,
+              "livingsize": 1585,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1585
+            },
+            "rooms": {
+              "bathstotal": 2,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 810,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "parking": {
+              "prkgSize": 432,
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "levels": 1,
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-3-22",
+            "amount": {
+              "scr": 65,
+              "value": 481100,
+              "high": 649600,
+              "low": 390000,
+              "fsd": 35
+            }
+          },
+          "sale": {
+            "buyerName": "KHA,SAQLAIN & ALIA",
+            "sellerName": "HARRALD HERBERT E TRUST",
+            "salesearchdate": "2006-4-24",
+            "saleTransDate": "2006-4-24",
+            "mortgage": {
+              "FirstConcurrent": {
+                "trustDeedDocumentNumber": "87143",
+                "amount": 400000
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 525000,
+              "salerecdate": "2006-5-9",
+              "saledisclosuretype": 0,
+              "saledocnum": "0000087142",
+              "saletranstype": "Resale"
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 331
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 159970
+            },
+            "market": {
+              "mktttlvalue": 479910
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "KHAN",
+              "firstnameandmi": "SAQLAIN"
+            },
+            "owner2": {
+              "lastname": "KHAN",
+              "firstnameandmi": "ALIA"
+            },
+            "absenteeownerstatus": "O",
+            "mailingaddressoneline": "7 TUTTLE AVE, CLARENDON HILLS IL 605141153"
+          }
+        }
+      ]
+    }
+  ]
+}

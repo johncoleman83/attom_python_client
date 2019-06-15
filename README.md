@@ -2,9 +2,19 @@
 
 https://api.developer.attomdata.com/docs#/
 
+## Setup
+
+create the file `attom_python_client/api/secrets.py` based off of this template,
+but add your api key (the default api key from the docs is used here below):
+  ```
+  #!/usr/bin/env python3  
+  API_KEY = "736f1130096aa92549d800921bca8e8c"
+  ```
+
 ## Playground
 
-use the `python3` repl
+use the `python3` repl. Note that the `ping` method uses the defautl API key,
+and does not use your secret key
 ```
 $ python3
 Python 3.7.0 (default, Aug 22 2018, 15:22:33) 

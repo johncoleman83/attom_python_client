@@ -1,4 +1,4 @@
-# ATTOM Data SolutionsOM
+# ATTOM Data Solutions
 
 https://api.developer.attomdata.com/docs#/
 

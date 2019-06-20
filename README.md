@@ -13,7 +13,13 @@ but add your api key (the default api key from the docs is used here below):
 
 ## Playground
 
-use the `python3` repl. Note that the `ping` method uses the defautl API key,
+Execute the `playground.py` file with your custom program to interact with the
+API and parse your results.
+```
+$ ./playground.py
+```
+
+Or use the `python3` repl. Note that the `ping` method uses the defautl API key,
 and does not use your secret key
 ```
 $ python3

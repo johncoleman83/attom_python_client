@@ -4,28 +4,20 @@ testing out package
 """
 import api
 from file_io import io
-from file_storage import avm_results_44579066315903093
+from file_storage import avm_results_44579066315903093, avm_results_9118152176506649
 import json
 import statistics
 import time
 
-avm_results = avm_results_44579066315903093.avm_results
-PREDICTED_SALE = {
-  'address': '7 TUTTLE PREDICTED',
-  'mktttlvalue': 479910,
-  'avm': 481100,
-  'building': {
-    'size': 2395,
-    'baths': 2.0,
-    'beds': 0,
-    'bsmt': 810
-  },
-  'lot': 9660,
-  'sale': {
-    'saleamt': 485000,
-    'saledate': 'FUTURE'
-  }
-}
+# HOMES_TO_QUERY = api.addresses.SOLD_ADDRESSES_FOR_AVM
+HOMES_TO_QUERY = api.addresses.LA_GRANGE_HOMES
+
+# avm_results = avm_results_44579066315903093.avm_results
+avm_results = avm_results_9118152176506649.avm_results
+
+# PREDICTED_SALE = api.addresses.TUTTLE_CLARENDON_HILLS
+# PREDICTED_SALE = api.addresses.SPRING_LA_GRANGE
+PREDICTED_SALE = api.addresses.MADISON_LA_GRANGE
 
 WAIT_TIMEOUT = 2
 DESIRED_KEYS = [
@@ -45,16 +37,18 @@ def show_and_write(p, write_to_file = False):
   if write_to_file:
     to_write = "{},\n".format(json.dumps(p))
     io.append_to_file_storage(to_write)
+  else:
+    print("ONLY writing results to STDOUT, NOT to file_storage")
 
-def get_avm_for_properties_list():
+def get_avm_for_properties_list(write_to_file = False):
   """
   loop through all addresses to get avms
   """
   properties = []
-  for number_street, city_state in api.addresses.SOLD_ADDRESSES_FOR_AVM.items():
+  for number_street, city_state in HOMES_TO_QUERY.items():
     property_avm = api.attomized_avm.get_avm_by_address(number_street, city_state)
     properties.append(property_avm)
-    show_and_write(property_avm)
+    show_and_write(property_avm, write_to_file)
     time.sleep(WAIT_TIMEOUT)
   return properties
 
@@ -153,6 +147,7 @@ def compare_one_property(p):
       "SaleValue: {}".format(saleamt),
       "MarketValue - SaleValue: {}".format(mktdiff),
       "AVM - SaleValue: {}".format(avmdiff),
+      "-------------------",
     ]
   )
   print(to_print)
@@ -173,8 +168,14 @@ def show_differences():
   print(to_print)
 
 def execute():
-  properties = parse_and_filter_results()
-  properties.append(PREDICTED_SALE)
+  """
+  Should set write_to_file for:
+  get_avm_for_properties_list &
+  parse_and_filter_results
+  """
+  # get_avm_for_properties_list(True)
+  properties = parse_and_filter_results(False)
+  #properties.append(PREDICTED_SALE)
   compare_properties(properties)
   show_differences()
   

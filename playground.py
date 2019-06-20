@@ -29,8 +29,12 @@ DESIRED_KEYS = [
   'sale'
 ]
 
+all_building_sizes = []
+all_beds = []
+all_baths = []
 all_market_diffs = []
 all_avm_diffs = []
+all_sale_values = []
 
 def show_and_write(p, write_to_file = False):
   print(p)
@@ -72,13 +76,19 @@ def parse_and_filter_results(write_to_file = False):
 def get_building_from(p):
   try:
     b = {
-      'size': p['building']['size']['grosssize'],
+      'size': p['building']['size']['livingsize'],
       'baths': p['building']['rooms']['bathstotal'],
       'beds': p['building']['rooms']['beds'],
       'bsmt': p['building']['interior']['bsmtsize']
     }
   except:
     return {}
+  if b.get('beds'):
+    all_beds.append(b.get('beds'))
+  if b.get('baths'):
+    all_baths.append(b.get('baths'))
+  if b.get('size'):
+    all_building_sizes.append(b.get('size'))
   return b
 
 def get_sale_from(p):
@@ -89,6 +99,8 @@ def get_sale_from(p):
     }
   except:
     return "NULL"
+  if sale.get('saleamt'):
+    all_sale_values.append(sale.get('saleamt'))
   return sale
 
 def get_address_from(p):
@@ -141,7 +153,7 @@ def compare_one_property(p):
       "Address: {}".format(p.get('address')),
       "SaleDate: {}".format(date),
       "Lot: {}".format(p.get('lot')),
-      "Lot: {}".format(p.get('building')),
+      "Building: {}".format(p.get('building')),
       "AVM: {}".format(avm),
       "MarketValue: {}".format(mktval),
       "SaleValue: {}".format(saleamt),
@@ -157,12 +169,21 @@ def compare_properties(properties):
     compare_one_property(p)
 
 def show_differences():
+  mean_sale_values = statistics.mean(all_sale_values)
   mean_market_diffs = statistics.mean(all_market_diffs)
   mean_avm_diffs = statistics.mean(all_avm_diffs)
+  mean_beds = statistics.mean(all_beds)
+  mean_baths = statistics.mean(all_baths)
+  mean_building_sizes = statistics.mean(all_building_sizes)
+  
   to_print = '\n'.join(
     [
-      "MeanMarketDiffs: {}".format(mean_market_diffs),
-      "MeanAVMDiffs: {}".format(mean_avm_diffs),
+      "Mean Beds: {}".format(mean_beds),
+      "Mean Baths: {}".format(mean_baths),
+      "Mean Building Sizes: {}".format(mean_building_sizes),
+      "Mean Sale Values: {}".format(mean_sale_values),
+      "Mean Market Value - Sale Value: {}".format(mean_market_diffs),
+      "Mean AVM - Sale Value: {}".format(mean_avm_diffs),
     ]
   )
   print(to_print)

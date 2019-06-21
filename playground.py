@@ -4,16 +4,18 @@ testing out package
 """
 import api
 from file_io import io
-from file_storage import avm_results_44579066315903093, avm_results_9118152176506649
+from file_storage import avm_results_clarendon_hills, avm_results_hinsdale, avm_results_la_grange
 import json
 import statistics
 import time
 
-# HOMES_TO_QUERY = api.addresses.SOLD_ADDRESSES_FOR_AVM
-HOMES_TO_QUERY = api.addresses.LA_GRANGE_HOMES
+HOMES_TO_QUERY = api.addresses.CLARENDON_HILLS_HOMES
+# HOMES_TO_QUERY = api.addresses.LA_GRANGE_HOMES
+# HOMES_TO_QUERY = api.addresses.HINSDALE_HOMES
 
-# avm_results = avm_results_44579066315903093.avm_results
-avm_results = avm_results_9118152176506649.avm_results
+avm_results = avm_results_la_grange.avm_results
+# avm_results = avm_results_hinsdale.avm_results
+# avm_results = avm_results_clarendon_hills.avm_results
 
 # PREDICTED_SALE = api.addresses.TUTTLE_CLARENDON_HILLS
 # PREDICTED_SALE = api.addresses.SPRING_LA_GRANGE
@@ -29,17 +31,19 @@ DESIRED_KEYS = [
   'sale'
 ]
 
-all_building_sizes = []
-all_beds = []
-all_baths = []
-all_market_diffs = []
-all_avm_diffs = []
-all_sale_values = []
+all_building_sizes, all_beds, all_baths, all_market_diffs, all_avm_diffs, all_sale_values = [], [], [], [], [], []
+
+def init_file():
+  io.append_to_file_storage("#!/usr/bin/env python3\n\navm_results = [\n")
+
+def terminate_file():
+  io.append_to_file_storage("]\n")
+
 
 def show_and_write(p, write_to_file = False):
   print(p)
   if write_to_file:
-    to_write = "{},\n".format(json.dumps(p))
+    to_write = "\t{},\n".format(json.dumps(p))
     io.append_to_file_storage(to_write)
   else:
     print("ONLY writing results to STDOUT, NOT to file_storage")
@@ -169,24 +173,21 @@ def compare_properties(properties):
     compare_one_property(p)
 
 def show_differences():
-  mean_sale_values = statistics.mean(all_sale_values)
-  mean_market_diffs = statistics.mean(all_market_diffs)
-  mean_avm_diffs = statistics.mean(all_avm_diffs)
-  mean_beds = statistics.mean(all_beds)
-  mean_baths = statistics.mean(all_baths)
-  mean_building_sizes = statistics.mean(all_building_sizes)
-  
-  to_print = '\n'.join(
-    [
-      "Mean Beds: {}".format(mean_beds),
-      "Mean Baths: {}".format(mean_baths),
-      "Mean Building Sizes: {}".format(mean_building_sizes),
-      "Mean Sale Values: {}".format(mean_sale_values),
-      "Mean Market Value - Sale Value: {}".format(mean_market_diffs),
-      "Mean AVM - Sale Value: {}".format(mean_avm_diffs),
-    ]
-  )
-  print(to_print)
+  to_print = []
+  mean_values_lists = [
+    all_building_sizes, all_beds, all_baths, all_sale_values
+  ]
+  mean_names = [
+    "Building Sizes", "Beds", "Baths", "Sale Values"
+  ]
+  for i, totals in enumerate(mean_values_lists):
+    if len(totals) > 0:
+      temp_mean = statistics.mean(totals)
+      to_print.append("Mean {}: {}".format(mean_names[i], temp_mean))
+  to_print.append("Mean Market Value - Sale Value: {}".format(statistics.mean(all_market_diffs)))
+  to_print.append("Mean AVM - Sale Value: {}".format(statistics.mean(all_avm_diffs)))
+
+  print('\n'.join(to_print))
 
 def execute():
   """
@@ -194,9 +195,11 @@ def execute():
   get_avm_for_properties_list &
   parse_and_filter_results
   """
-  # get_avm_for_properties_list(True)
+  #init_file()
+  #get_avm_for_properties_list(True)
+  #terminate_file()
   properties = parse_and_filter_results(False)
-  #properties.append(PREDICTED_SALE)
+  properties.append(PREDICTED_SALE)
   compare_properties(properties)
   show_differences()
   

@@ -6,7 +6,6 @@ https://api.developer.attomdata.com
 import requests
 from urllib.parse import quote, urlencode
 from api import api
-from api import addresses
 
 PATH = "assessment/snapshot"
 

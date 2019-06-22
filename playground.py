@@ -2,6 +2,7 @@
 """
 testing out package
 """
+import addresses
 import api
 from file_io import io
 from file_storage import (
@@ -14,22 +15,28 @@ import json
 import statistics
 import time
 
-# HOMES_TO_QUERY = api.addresses.CLARENDON_HILLS_HOMES
-HOMES_TO_QUERY = api.addresses.WESTERN_SPRINGS_HOMES
-# HOMES_TO_QUERY = api.addresses.LA_GRANGE_HOMES
-# HOMES_TO_QUERY = api.addresses.HINSDALE_HOMES
+TEST_HOMES = addresses.test_list.HOMES
+CH_HOMES = addresses.clarendon_hills.HOMES
+WS_HOMES = addresses.western_springs.HOMES
+LAG_HOMES = addresses.la_grange.HOMES
+H_HOMES = addresses.hinsdale.HOMES
 
-# avm_results = avm_results_la_grange.avm_results
-avm_results = avm_results_western_springs.avm_results
-# avm_results = avm_results_hinsdale.avm_results
-# avm_results = avm_results_clarendon_hills.avm_results
+HOMES_TO_QUERY = H_HOMES
 
-# PREDICTED_SALE = api.addresses.TUTTLE_CLARENDON_HILLS
-# PREDICTED_SALE = api.addresses.SPRING_LA_GRANGE
-PREDICTED_SALE = api.addresses.MADISON_LA_GRANGE
+LAG_AVM = avm_results_la_grange.avm_results
+WS_AVM = avm_results_western_springs.avm_results
+H_AVM = avm_results_hinsdale.avm_results
+CH_AVM = avm_results_clarendon_hills.avm_results
+
+avm_results =  WS_AVM
+
+CH_DESIRED = addresses.clarendon_hills.TUTTLE_CLARENDON_HILLS
+LAG_DESIRED = addresses.la_grange.MADISON_LA_GRANGE
+
+DESIRED_PROPERTY = CH_DESIRED
 
 WAIT_TIMEOUT = 2
-DESIRED_KEYS = [
+SPECS_OF_INTEREST = [
   'address',
   'assessment',
   'avm',
@@ -39,13 +46,6 @@ DESIRED_KEYS = [
 ]
 
 all_building_sizes, all_beds, all_baths, all_market_diffs, all_avm_diffs, all_sale_values = [], [], [], [], [], []
-
-def init_file():
-  io.append_to_file_storage("#!/usr/bin/env python3\n\navm_results = [\n")
-
-def terminate_file():
-  io.append_to_file_storage("]\n")
-
 
 def show_and_write(p, write_to_file = False):
   print(p)
@@ -67,80 +67,32 @@ def get_avm_for_properties_list(write_to_file = False):
     time.sleep(WAIT_TIMEOUT)
   return properties
 
-def parse_and_filter_results(write_to_file = False):
+def parse_and_filter_results(avm_api_results, write_to_file = False):
   filtered_properties = []
-  for avm in avm_results:
-    property = avm['property'][0]
-    p = { desired_key: property.get(desired_key) for desired_key in DESIRED_KEYS }
+  if avm_api_results:
+    properties_to_loop = avm_api_results
+  else:
+    properties_to_loop = avm_results
+
+  for avm in properties_to_loop:
+    property_list = avm.get('property', None)
+    if type(property_list).__name__ != 'list':
+      continue
+    if len(property_list) < 1:
+      continue
+    property = property_list[0] 
+    property_reduced = { spec: property.get(spec) for spec in SPECS_OF_INTEREST }
     filtered_p = {
-      'address': get_address_from(p),
-      'mktttlvalue': get_market_value_from(p),
-      'avm': get_avm_from(p),
-      'building': get_building_from(p),
-      'lot': get_lot_from(p),
-      'sale': get_sale_from(p)
+      'address': api.attomized_avm.get_address_from(property_reduced),
+      'mktttlvalue': api.attomized_avm.get_market_value_from(property_reduced),
+      'avm': api.attomized_avm.get_avm_from(property_reduced),
+      'building': api.attomized_avm.get_building_from(property_reduced, all_beds, all_baths,  all_building_sizes),
+      'lot': api.attomized_avm.get_lot_from(property_reduced),
+      'sale': api.attomized_avm.get_sale_from(property_reduced, all_sale_values)
     }
     filtered_properties.append(filtered_p)
     show_and_write(filtered_p, write_to_file)
   return filtered_properties
-
-def get_building_from(p):
-  try:
-    b = {
-      'size': p['building']['size']['livingsize'],
-      'baths': p['building']['rooms']['bathstotal'],
-      'beds': p['building']['rooms']['beds'],
-      'bsmt': p['building']['interior']['bsmtsize']
-    }
-  except:
-    return {}
-  if b.get('beds'):
-    all_beds.append(b.get('beds'))
-  if b.get('baths'):
-    all_baths.append(b.get('baths'))
-  if b.get('size'):
-    all_building_sizes.append(b.get('size'))
-  return b
-
-def get_sale_from(p):
-  try:
-    sale = {
-      'saleamt': p['sale']['amount']['saleamt'],
-      'saledate': p['sale']['amount']['salerecdate']
-    }
-  except:
-    return "NULL"
-  if sale.get('saleamt'):
-    all_sale_values.append(sale.get('saleamt'))
-  return sale
-
-def get_address_from(p):
-  try:
-    lot = p['address']['line1']
-  except:
-    return "NULL"
-  return lot
-
-def get_lot_from(p):
-  try:
-    lot = p['lot']['lotsize2']
-  except:
-    return "NULL"
-  return lot
-
-def get_market_value_from(p):
-  try:
-    mv = p['assessment']['market']['mktttlvalue']
-  except:
-    return "NULL"
-  return mv
-
-def get_avm_from(p):
-  try:
-    avm = p['avm']['amount']['value']
-  except:
-    return "NULL"
-  return avm
 
 def compare_one_property(p):
   """
@@ -202,11 +154,15 @@ def execute():
   get_avm_for_properties_list &
   parse_and_filter_results
   """
-  # init_file()
-  # get_avm_for_properties_list(True)
-  # terminate_file()
-  properties = parse_and_filter_results(False)
-  properties.append(PREDICTED_SALE)
+  write_to_file = True
+  if write_to_file:
+    io.init_file()
+    avm_api_results = get_avm_for_properties_list(write_to_file)
+    io.terminate_file()
+  else:
+    avm_api_results = None
+  properties = parse_and_filter_results(avm_api_results, False)
+  properties.append(DESIRED_PROPERTY)
   compare_properties(properties)
   show_differences()
   

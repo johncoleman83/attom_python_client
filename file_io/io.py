@@ -9,6 +9,13 @@ import random
 FILE_HASH = str(random.random()).split('.')[1]
 AVM_RESULTS = "./file_storage/avm_results_{}.py".format(FILE_HASH)
 
+
+def init_file():
+  append_to_file_storage("#!/usr/bin/env python3\n\navm_results = [\n")
+
+def terminate_file():
+  append_to_file_storage("]\n")
+
 def append_to_file_storage(avm_results):
     """
     appends the findings to file in case of crash

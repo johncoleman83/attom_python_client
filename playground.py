@@ -21,7 +21,7 @@ WS_HOMES = addresses.western_springs.HOMES
 LAG_HOMES = addresses.la_grange.HOMES
 H_HOMES = addresses.hinsdale.HOMES
 
-HOMES_TO_QUERY = H_HOMES
+HOMES_TO_QUERY = TEST_HOMES
 
 LAG_AVM = avm_results_la_grange.avm_results
 WS_AVM = avm_results_western_springs.avm_results
@@ -154,7 +154,7 @@ def execute():
   get_avm_for_properties_list &
   parse_and_filter_results
   """
-  write_to_file = False
+  write_to_file = True
   if write_to_file:
     io.init_file()
     avm_api_results = get_avm_for_properties_list(write_to_file)
@@ -162,7 +162,6 @@ def execute():
   else:
     avm_api_results = None
   properties = parse_and_filter_results(avm_api_results, False)
-  properties.append(DESIRED_PROPERTY)
   compare_properties(properties)
   show_differences()
   

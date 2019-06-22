@@ -164,3 +164,13 @@ Type "help", "copyright", "credits" or "license" for more information.
   Mean Market Value - Sale Value: -43332.181818181816
   Mean AVM - Sale Value: -778.1818181818181
   ```
+
+* western springs
+  ```
+  Mean Building Sizes: 1630.4583333333333
+  Mean Beds: 3.2666666666666666
+  Mean Baths: 1.95
+  Mean Sale Values: 465114.1304347826
+  Mean Market Value - Sale Value: -25385.760869565216
+  Mean AVM - Sale Value: 8153.260869565217
+  ```

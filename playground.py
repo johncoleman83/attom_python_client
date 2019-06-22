@@ -4,16 +4,23 @@ testing out package
 """
 import api
 from file_io import io
-from file_storage import avm_results_clarendon_hills, avm_results_hinsdale, avm_results_la_grange
+from file_storage import (
+  avm_results_western_springs,
+  avm_results_clarendon_hills,
+  avm_results_hinsdale,
+  avm_results_la_grange
+)
 import json
 import statistics
 import time
 
-HOMES_TO_QUERY = api.addresses.CLARENDON_HILLS_HOMES
+# HOMES_TO_QUERY = api.addresses.CLARENDON_HILLS_HOMES
+HOMES_TO_QUERY = api.addresses.WESTERN_SPRINGS_HOMES
 # HOMES_TO_QUERY = api.addresses.LA_GRANGE_HOMES
 # HOMES_TO_QUERY = api.addresses.HINSDALE_HOMES
 
-avm_results = avm_results_la_grange.avm_results
+# avm_results = avm_results_la_grange.avm_results
+avm_results = avm_results_western_springs.avm_results
 # avm_results = avm_results_hinsdale.avm_results
 # avm_results = avm_results_clarendon_hills.avm_results
 
@@ -195,9 +202,9 @@ def execute():
   get_avm_for_properties_list &
   parse_and_filter_results
   """
-  #init_file()
-  #get_avm_for_properties_list(True)
-  #terminate_file()
+  # init_file()
+  # get_avm_for_properties_list(True)
+  # terminate_file()
   properties = parse_and_filter_results(False)
   properties.append(PREDICTED_SALE)
   compare_properties(properties)

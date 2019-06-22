@@ -128,3 +128,34 @@ Type "help", "copyright", "credits" or "license" for more information.
             'total': 1,
             'version': '1.0.0'}}
 ```
+
+## Some results from `playground.py`
+
+* hinsdale
+  ```
+  Mean Building Sizes: 1802.3333333333333
+  Mean Beds: 3.6666666666666665
+  Mean Baths: 2.1794871794871793
+  Mean Sale Values: 485259.72222222225
+  Mean Market Value - Sale Value: -2283.3333333333335
+  Mean AVM - Sale Value: 37010
+  ```
+
+* clarendon_hills
+  ```
+  Mean Building Sizes: 1779.8648648648648
+  Mean Baths: 2.054054054054054
+  Mean Sale Values: 496765.625
+  Mean Market Value - Sale Value: -27575.9375
+  Mean AVM - Sale Value: 2084.375
+  ```
+
+* la grange
+  ```
+  Mean Building Sizes: 1827.8360655737704
+  Mean Beds: 3.557377049180328
+  Mean Baths: 2.262295081967213
+  Mean Sale Values: 477436.36363636365
+  Mean Market Value - Sale Value: -43332.181818181816
+  Mean AVM - Sale Value: -778.1818181818181
+  ```

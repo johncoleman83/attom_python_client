@@ -2,6 +2,11 @@
 
 https://api.developer.attomdata.com/docs#/
 
+## Requirements
+
+* Python3
+* requests==2.21.0
+
 ## Setup
 
 create the file `attom_python_client/api/secrets.py` based off of this template,

@@ -45,7 +45,8 @@ def get_sale_from(p, all_sale_values):
     'saleamt': p.get('sale', {}).get('amount', {}).get('saleamt', None),
     'saledate': p.get('sale', {}).get('amount', {}).get('salerecdate', None),
   }
-  all_sale_values.append(sale.get('saleamt'))
+  if sale.get('saleamt'):
+    all_sale_values.append(sale.get('saleamt'))
   return sale
 
 def get_address_from(p):

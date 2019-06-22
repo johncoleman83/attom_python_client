@@ -28,7 +28,7 @@ WS_AVM = avm_results_western_springs.avm_results
 H_AVM = avm_results_hinsdale.avm_results
 CH_AVM = avm_results_clarendon_hills.avm_results
 
-avm_results =  WS_AVM
+avm_results =  H_AVM
 
 CH_DESIRED = addresses.clarendon_hills.TUTTLE_CLARENDON_HILLS
 LAG_DESIRED = addresses.la_grange.MADISON_LA_GRANGE
@@ -154,7 +154,7 @@ def execute():
   get_avm_for_properties_list &
   parse_and_filter_results
   """
-  write_to_file = True
+  write_to_file = False
   if write_to_file:
     io.init_file()
     avm_api_results = get_avm_for_properties_list(write_to_file)

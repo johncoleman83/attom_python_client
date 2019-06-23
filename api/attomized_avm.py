@@ -45,6 +45,8 @@ def get_sale_from(p, all_sale_values):
     'saleamt': p.get('sale', {}).get('amount', {}).get('saleamt', None),
     'saledate': p.get('sale', {}).get('amount', {}).get('salerecdate', None),
   }
+  if sale.get('saleamt') == 0:
+    sale['saleamt'] = None
   if sale.get('saleamt'):
     all_sale_values.append(sale.get('saleamt'))
   return sale
@@ -56,7 +58,7 @@ def get_lot_from(p):
   return p.get('lot', {}).get('lotsize2', "NULL")
 
 def get_market_value_from(p):
-  return p.get('assessment', {}).get('market', {}).get('mktttlvalue', "NULL")
+  return p.get('assessment', {}).get('market', {}).get('mktttlvalue', None)
 
 def get_avm_from(p):
-  return p.get('avm', {}).get('amount', {}).get('value', "NULL")
+  return p.get('avm', {}).get('amount', {}).get('value', None)

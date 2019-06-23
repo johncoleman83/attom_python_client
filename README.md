@@ -148,11 +148,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 * clarendon_hills
   ```
-  Mean Building Sizes: 1779.8648648648648
-  Mean Baths: 2.054054054054054
-  Mean Sale Values: 496765.625
-  Mean Market Value - Sale Value: -27575.9375
-  Mean AVM - Sale Value: 2084.375
+  Mean Building Sizes: 1641.138888888889
+  Mean Baths: 1.9444444444444444
+  Mean Sale Values: 454300
+  Mean Market Value - Sale Value: -20409
+  Mean AVM - Sale Value: 11096.666666666666
   ```
 
 * la grange

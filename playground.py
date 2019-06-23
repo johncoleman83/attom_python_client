@@ -28,7 +28,7 @@ WS_AVM = avm_results_western_springs.avm_results
 H_AVM = avm_results_hinsdale.avm_results
 CH_AVM = avm_results_clarendon_hills.avm_results
 
-avm_results =  H_AVM
+avm_results =  CH_AVM
 
 CH_DESIRED = addresses.clarendon_hills.TUTTLE_CLARENDON_HILLS
 LAG_DESIRED = addresses.la_grange.MADISON_LA_GRANGE
@@ -67,14 +67,10 @@ def get_avm_for_properties_list(write_to_file = False):
     time.sleep(WAIT_TIMEOUT)
   return properties
 
-def parse_and_filter_results(avm_api_results, write_to_file = False):
+def parse_and_filter_results(properties, write_to_file = False):
   filtered_properties = []
-  if avm_api_results:
-    properties_to_loop = avm_api_results
-  else:
-    properties_to_loop = avm_results
 
-  for avm in properties_to_loop:
+  for avm in properties:
     property_list = avm.get('property', None)
     if type(property_list).__name__ != 'list':
       continue
@@ -105,10 +101,10 @@ def compare_one_property(p):
     saleamt = sale.get("saleamt", 0)
   mktval = p.get('mktttlvalue', 0)
   avm = p.get('avm', 0)
-  if mktval and saleamt:
+  if mktval and saleamt and mktval != 0 and saleamt != 0:
     mktdiff = mktval - saleamt
     all_market_diffs.append(mktdiff)
-  if avm and saleamt:
+  if avm and saleamt and avm != 0 and saleamt != 0:
     avmdiff = avm - saleamt
     all_avm_diffs.append(avmdiff)
   to_print = '\n'.join(
@@ -154,14 +150,15 @@ def execute():
   get_avm_for_properties_list &
   parse_and_filter_results
   """
-  write_to_file = True
+  write_to_file = False
   if write_to_file:
     io.init_file()
     avm_api_results = get_avm_for_properties_list(write_to_file)
     io.terminate_file()
+    properties = parse_and_filter_results(avm_api_results, False)
   else:
-    avm_api_results = None
-  properties = parse_and_filter_results(avm_api_results, False)
+    properties = parse_and_filter_results(avm_results, False)
+
   compare_properties(properties)
   show_differences()
   

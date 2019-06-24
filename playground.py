@@ -28,7 +28,7 @@ WS_AVM = avm_results_western_springs.avm_results
 H_AVM = avm_results_hinsdale.avm_results
 CH_AVM = avm_results_clarendon_hills.avm_results
 
-avm_results =  CH_AVM
+avm_results =  H_AVM
 
 CH_DESIRED = addresses.clarendon_hills.TUTTLE_CLARENDON_HILLS
 LAG_DESIRED = addresses.la_grange.MADISON_LA_GRANGE

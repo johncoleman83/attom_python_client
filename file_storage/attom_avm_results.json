@@ -8,6 +8,322 @@
         "msg": "SuccessWithResult",
         "total": 1,
         "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 1624176817043,
+            "fips": "17043",
+            "apn": "0910219014",
+            "apnOrig": "910219014",
+            "attomId": 16241768
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "24",
+            "lotsize1": 0.2228,
+            "lotsize2": 9703,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "25",
+            "countrysecsubd": "DuPage County",
+            "countyuse1": "R",
+            "muncode": "DP",
+            "munname": "DU PAGE",
+            "srvyRange": "11",
+            "srvySection": "10",
+            "srvyTownship": "38",
+            "subdname": "MC INTOSH CLARENDON HILLS SUB",
+            "subdtractnum": "0",
+            "taxcodearea": "9060"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "11 TUTTLE AVE",
+            "line2": "CLARENDON HILLS, IL 60514",
+            "locality": "Clarendon Hills",
+            "matchCode": "ExaStr",
+            "oneLine": "11 TUTTLE AVE, CLARENDON HILLS, IL 60514",
+            "postal1": "60514",
+            "postal2": "1153",
+            "postal3": "C005"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.796362",
+            "longitude": "-87.961340",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, MT30001048, ND0004686021, PL1714572, SB0000084870, SB0000084873, SB0000084874, ZI60514"
+          },
+          "summary": {
+            "absenteeInd": "ABSENTEE(MAIL AND SITUS NOT =)",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1956,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "MC INTOSH CLARENDON HILLS SUB"
+          },
+          "utilities": {},
+          "building": {
+            "size": {
+              "bldgsize": 2668,
+              "grosssize": 2668,
+              "grosssizeadjusted": 1559,
+              "groundfloorsize": 0,
+              "livingsize": 1559,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1559
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 1,
+              "bathsfull": 1,
+              "bathshalf": 0,
+              "bathstotal": 1,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 1109,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "construction": {
+              "frameType": "TYPE UNKNOWN",
+              "wallType": "WOOD"
+            },
+            "parking": {
+              "garagetype": "ALUMINUM",
+              "prkgSize": 400,
+              "prkgSpaces": "0",
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "bldgsNum": 0,
+              "bldgType": "TYPE UNKNOWN",
+              "imprType": "RESIDENTIAL",
+              "levels": 1,
+              "mobileHomeInd": " ",
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-4-29",
+            "pubDate": "2019-6-5"
+          },
+          "avm": {
+            "eventDate": "2019-4-29",
+            "amount": {
+              "scr": 87,
+              "value": 486000,
+              "high": 545000,
+              "low": 427000,
+              "valueRange": 118000
+            },
+            "calculations": {
+              "perSizeUnit": 311.74,
+              "ratioTaxAmt": 55.91,
+              "ratioTaxValue": 1.04,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 24.28
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 494000,
+              "avmamountchange": -8000,
+              "avmpercentchange": -2
+            },
+            "condition": {
+              "avmpoorlow": 405650,
+              "avmpoorhigh": 517750,
+              "avmpoorscore": 82,
+              "avmgoodlow": 427000,
+              "avmgoodhigh": 545000,
+              "avmgoodscore": 87,
+              "avmexcellentlow": 437675,
+              "avmexcellenthigh": 558625,
+              "avmexcellentscore": 89.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 15331383217043,
+            "fips": "17043",
+            "apn": "0901204011",
+            "apnOrig": "901204011",
+            "attomId": 153313832
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "16",
+            "lotsize1": 0.1822,
+            "lotsize2": 7936,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "2",
+            "countrysecsubd": "DuPage County",
+            "countyuse1": "R",
+            "muncode": "DP",
+            "munname": "DU PAGE",
+            "srvyRange": "11",
+            "srvySection": "01",
+            "srvyTownship": "38",
+            "subdname": "BUSHS ADD",
+            "subdtractnum": "0",
+            "taxcodearea": "9059"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "113 MINNEOLA ST",
+            "line2": "HINSDALE, IL 60521",
+            "locality": "Hinsdale",
+            "matchCode": "ExaStr",
+            "oneLine": "113 MINNEOLA ST, HINSDALE, IL 60521",
+            "postal1": "60521",
+            "postal2": "3513",
+            "postal3": "C061"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.812348",
+            "longitude": "-87.926926",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084871, SB0000084874, ZI60521"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1922,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "BUSHS ADD"
+          },
+          "utilities": {},
+          "building": {
+            "size": {
+              "bldgsize": 2586,
+              "grosssize": 2586,
+              "grosssizeadjusted": 1518,
+              "groundfloorsize": 0,
+              "livingsize": 1518,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1518
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 1,
+              "bathsfull": 1,
+              "bathshalf": 0,
+              "bathstotal": 1,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 1068,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "construction": {
+              "frameType": "TYPE UNKNOWN",
+              "wallType": "BRICK"
+            },
+            "parking": {
+              "garagetype": "ALUMINUM",
+              "prkgSize": 360,
+              "prkgSpaces": "0",
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "bldgsNum": 0,
+              "bldgType": "TYPE UNKNOWN",
+              "imprType": "RESIDENTIAL",
+              "levels": 2,
+              "mobileHomeInd": " ",
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-4-29",
+            "pubDate": "2019-6-5"
+          },
+          "avm": {
+            "eventDate": "2019-4-29",
+            "amount": {
+              "scr": 74,
+              "value": 459000,
+              "high": 537000,
+              "low": 380000,
+              "valueRange": 157000
+            },
+            "calculations": {
+              "perSizeUnit": 302.37,
+              "ratioTaxAmt": 60.82,
+              "ratioTaxValue": 0.97,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 34.2
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 447000,
+              "avmamountchange": 12000,
+              "avmpercentchange": 3
+            },
+            "condition": {
+              "avmpoorlow": 361000,
+              "avmpoorhigh": 510150,
+              "avmpoorscore": 69,
+              "avmgoodlow": 380000,
+              "avmgoodhigh": 537000,
+              "avmgoodscore": 74,
+              "avmexcellentlow": 389500,
+              "avmexcellenthigh": 550425,
+              "avmexcellentscore": 76.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
         "pagesize": 10,
         "responseDateTime": "2019-6-14T04:52:15",
         "transactionID": "2d6ad636-e499-4896-8323-38aa43ab13f9"

@@ -171,6 +171,164 @@
       "property": [
         {
           "identifier": {
+            "obPropId": 1970273817043,
+            "fips": "17043",
+            "apn": "0901203016",
+            "apnOrig": "901203016",
+            "attomId": 19702738
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "9",
+            "lotsize1": 0.1761,
+            "lotsize2": 7672,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "1",
+            "countrysecsubd": "DuPage County",
+            "countyuse1": "R",
+            "muncode": "DP",
+            "munname": "DU PAGE",
+            "srvyRange": "11",
+            "srvySection": "01",
+            "srvyTownship": "38",
+            "subdname": "BUSHS ADD",
+            "subdtractnum": "0",
+            "taxcodearea": "9059"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "113 MAUMELL ST",
+            "line2": "HINSDALE, IL 60521",
+            "locality": "Hinsdale",
+            "matchCode": "ExaStr",
+            "oneLine": "113 MAUMELL ST, HINSDALE, IL 60521",
+            "postal1": "60521",
+            "postal2": "3524",
+            "postal3": "C061"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.813373",
+            "longitude": "-87.927420",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084871, SB0000084874, ZI60521"
+          },
+          "summary": {
+            "absenteeInd": "ABSENTEE(MAIL AND SITUS NOT =)",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1921,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "BUSHS ADD"
+          },
+          "utilities": {},
+          "building": {
+            "size": {
+              "bldgsize": 2016,
+              "grosssize": 2016,
+              "grosssizeadjusted": 1008,
+              "groundfloorsize": 0,
+              "livingsize": 1008,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1008
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 2,
+              "bathsfull": 2,
+              "bathshalf": 0,
+              "bathstotal": 2,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 1008,
+              "bsmttype": "UNFINISHED",
+              "fplccount": 0
+            },
+            "construction": {
+              "frameType": "TYPE UNKNOWN",
+              "wallType": "WOOD"
+            },
+            "parking": {
+              "garagetype": "ALUMINUM",
+              "prkgSize": 528,
+              "prkgSpaces": "0",
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "bldgsNum": 0,
+              "bldgType": "TYPE UNKNOWN",
+              "imprType": "RESIDENTIAL",
+              "levels": 1,
+              "mobileHomeInd": " ",
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-4-29",
+            "pubDate": "2019-6-5"
+          },
+          "avm": {
+            "eventDate": "2019-4-29",
+            "amount": {
+              "scr": 81,
+              "value": 426000,
+              "high": 488000,
+              "low": 364000,
+              "valueRange": 124000
+            },
+            "calculations": {
+              "perSizeUnit": 422.62,
+              "ratioTaxAmt": 56.12,
+              "ratioTaxValue": 0.96,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 29.11
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 412000,
+              "avmamountchange": 14000,
+              "avmpercentchange": 3
+            },
+            "condition": {
+              "avmpoorlow": 345800,
+              "avmpoorhigh": 463600,
+              "avmpoorscore": 76,
+              "avmgoodlow": 364000,
+              "avmgoodhigh": 488000,
+              "avmgoodscore": 81,
+              "avmexcellentlow": 373100,
+              "avmexcellenthigh": 500200,
+              "avmexcellentscore": 83.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
             "obPropId": 15331383217043,
             "fips": "17043",
             "apn": "0901204011",

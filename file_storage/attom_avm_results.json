@@ -171,6 +171,163 @@
       "property": [
         {
           "identifier": {
+            "obPropId": 14563526217043,
+            "fips": "17043",
+            "apn": "0901400001",
+            "apnOrig": "901400001",
+            "attomId": 145635262
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotnum": "127",
+            "lotsize1": 0.3271,
+            "lotsize2": 14249,
+            "pooltype": "NONE"
+          },
+          "area": {
+            "blockNum": "3",
+            "countrysecsubd": "DuPage County",
+            "countyuse1": "R",
+            "muncode": "DP",
+            "munname": "DU PAGE",
+            "srvyRange": "11",
+            "srvySection": "01",
+            "srvyTownship": "38",
+            "subdname": "KRONENBERGS DIV LT",
+            "subdtractnum": "0",
+            "taxcodearea": "9059"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "110 THE LN",
+            "line2": "HINSDALE, IL 60521",
+            "locality": "Hinsdale",
+            "matchCode": "ExaZip",
+            "oneLine": "110 THE LN, HINSDALE, IL 60521",
+            "postal1": "60521",
+            "postal2": "3749",
+            "postal3": "C061"
+          },
+          "location": {
+            "accuracy": "Zip5",
+            "elevation": 0,
+            "latitude": "41.798780",
+            "longitude": "-87.928280",
+            "distance": 0,
+            "geoid": "CO17043, CS1720604, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084869, SB0000084874, ZI60521"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "RESIDENTIAL",
+            "proptype": "SFR",
+            "yearbuilt": 1953,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "KRONENBERGS DIV OF LOT 127 OF THOMAS S COUSINS SUBN SEC 1-38-11"
+          },
+          "utilities": {},
+          "building": {
+            "size": {
+              "bldgsize": 1531,
+              "grosssize": 1531,
+              "grosssizeadjusted": 1531,
+              "groundfloorsize": 0,
+              "livingsize": 1531,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 1531
+            },
+            "rooms": {
+              "bathfixtures": 0,
+              "baths1qtr": 0,
+              "baths3qtr": 0,
+              "bathscalc": 1,
+              "bathsfull": 1,
+              "bathshalf": 0,
+              "bathstotal": 1,
+              "beds": 0,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 0,
+              "fplccount": 0
+            },
+            "construction": {
+              "frameType": "TYPE UNKNOWN",
+              "wallType": "BRICK"
+            },
+            "parking": {
+              "garagetype": "ALUMINUM",
+              "prkgSize": 360,
+              "prkgSpaces": "0",
+              "prkgType": "COVERED CARPORT"
+            },
+            "summary": {
+              "bldgsNum": 0,
+              "bldgType": "TYPE UNKNOWN",
+              "imprType": "RESIDENTIAL",
+              "levels": 1,
+              "mobileHomeInd": " ",
+              "storyDesc": "TYPE UNKNOWN",
+              "unitsCount": "1",
+              "yearbuilteffective": 0
+            }
+          },
+          "vintage": {
+            "lastModified": "2019-4-29",
+            "pubDate": "2019-6-5"
+          },
+          "avm": {
+            "eventDate": "2019-4-29",
+            "amount": {
+              "scr": 80,
+              "value": 698000,
+              "high": 801000,
+              "low": 596000,
+              "valueRange": 205000
+            },
+            "calculations": {
+              "perSizeUnit": 455.91,
+              "ratioTaxAmt": 58.18,
+              "ratioTaxValue": 0.95,
+              "monthlyChgPct": 0,
+              "monthlyChgValue": 0,
+              "rangePctOfValue": 29.37
+            },
+            "AVMChange": {
+              "avmlastmonthvalue": 670000,
+              "avmamountchange": 28000,
+              "avmpercentchange": 4
+            },
+            "condition": {
+              "avmpoorlow": 566200,
+              "avmpoorhigh": 760950,
+              "avmpoorscore": 75,
+              "avmgoodlow": 596000,
+              "avmgoodhigh": 801000,
+              "avmgoodscore": 80,
+              "avmexcellentlow": 610900,
+              "avmexcellenthigh": 821025,
+              "avmexcellentscore": 82.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10
+      },
+      "property": [
+        {
+          "identifier": {
             "obPropId": 1970273817043,
             "fips": "17043",
             "apn": "0901203016",

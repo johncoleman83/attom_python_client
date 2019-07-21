@@ -8,6 +8,797 @@
         "msg": "SuccessWithResult",
         "total": 1,
         "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-7-21T09:11:22",
+        "transactionID": "7f840cdf-d82f-4ace-a695-f38aae810c2a"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 1782316617031,
+            "fips": "17031",
+            "apn": "18073090470000",
+            "attomID": 17823166
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.3099,
+            "lotsize2": 13500
+          },
+          "area": {
+            "countrysecsubd": "Cook County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "537 PAMELA CIR",
+            "line2": "HINSDALE, IL 60521",
+            "locality": "Hinsdale",
+            "matchCode": "ExaStr",
+            "oneLine": "537 PAMELA CIR, HINSDALE, IL 60521",
+            "postal1": "60521",
+            "postal2": "4801",
+            "postal3": "C051"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.790210",
+            "longitude": "-87.915685",
+            "distance": 0,
+            "geoid": "CO17031, CS1745447, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084869, SB0000084874, ZI60521"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "HOUSE",
+            "proptype": "SFR",
+            "yearbuilt": 1967,
+            "propLandUse": "SFR",
+            "propIndicator": "10",
+            "legal1": "(WOODLANDS)(HINSDALE)(ILLINOIS) SUB OF SW 1/4 EXCEPT W 1312.4 FT OF N 718.2 FT SEC 07-38-12"
+          },
+          "utilities": {
+            "coolingtype": "AC.CENTRAL",
+            "walltype": "WOOD"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 0,
+              "grosssize": 0,
+              "grosssizeadjusted": 2709,
+              "groundfloorsize": 0,
+              "livingsize": 2709,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 2709
+            },
+            "rooms": {
+              "bathstotal": 3,
+              "beds": 4,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 0,
+              "fplccount": 2,
+              "fplcind": "Y",
+              "fplctype": "YES"
+            },
+            "parking": {
+              "prkgSize": 0,
+              "prkgType": "GARAGE - ATTACHED"
+            },
+            "summary": {
+              "levels": 1,
+              "storyDesc": "HOUSE",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-3-22",
+            "amount": {
+              "scr": 71,
+              "value": 813600,
+              "high": 1052000,
+              "low": 637600,
+              "fsd": 29
+            }
+          },
+          "sale": {
+            "buyerName": "ZOCK,LAWRENCE TRUST",
+            "sellerName": "ZOCK,LAWRENCE & DOROTHY",
+            "salesearchdate": "2014-6-9",
+            "saleTransDate": "2014-6-9",
+            "mortgage": {
+              "FirstConcurrent": {
+                "trustDeedDocumentNumber": "1416355004",
+                "amount": 350000
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 560000,
+              "salerecdate": "2014-6-12",
+              "saledisclosuretype": 0,
+              "saledocnum": "1416355003",
+              "saletranstype": "Resale"
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 207
+            },
+            "saleHistory": {
+              "status": {
+                "version": "1.0.0",
+                "code": 0,
+                "msg": "SuccessWithResult",
+                "total": 1,
+                "page": 1,
+                "pagesize": 10,
+                "responseDateTime": "2019-7-21T09:09:27",
+                "transactionID": "23832e8c-5a7e-4efd-85df-397a44bb40e5"
+              },
+              "echoed_fields": {
+                "jobID": "",
+                "loanNumber": "",
+                "preparedBy": "",
+                "resellerID": "",
+                "preparedFor": ""
+              },
+              "property": [
+                {
+                  "identifier": {
+                    "obPropId": 1782316617031,
+                    "fips": "17031",
+                    "apn": "18073090470000",
+                    "attomId": 17823166
+                  },
+                  "area": {
+                    "blockNum": "9",
+                    "countrySecSubd": "Cook County",
+                    "countyUse1": "2-04",
+                    "munCode": "CO",
+                    "munName": "COOK",
+                    "srvyRange": "12E",
+                    "srvySection": "07",
+                    "srvyTownship": "38N",
+                    "subdName": "WOODLANDS HINSDALE ILLINOIS",
+                    "subdTractNum": 0,
+                    "taxCodeArea": 21041
+                  },
+                  "address": {
+                    "country": "US",
+                    "countrySubd": "IL",
+                    "line1": "537 PAMELA CIR",
+                    "line2": "HINSDALE, IL 60521",
+                    "locality": "Hinsdale",
+                    "matchCode": "ExaStr",
+                    "oneLine": "537 PAMELA CIR, HINSDALE, IL 60521",
+                    "postal1": "60521",
+                    "postal2": "4801",
+                    "postal3": "C051",
+                    "stateFips": "17"
+                  },
+                  "location": {
+                    "accuracy": "Street",
+                    "elevation": 0,
+                    "latitude": "41.790210",
+                    "longitude": "-87.915685",
+                    "distance": 0,
+                    "geoid": "CO17031, CS1745447, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084869, SB0000084874, ZI60521"
+                  },
+                  "summary": {
+                    "absenteeInd": "OWNER OCCUPIED",
+                    "propClass": "Single Family Residence / Townhouse",
+                    "propSubType": "HOUSE",
+                    "propType": "SFR",
+                    "yearBuilt": 1967,
+                    "propLandUse": "SFR",
+                    "propIndicator": 10,
+                    "quitClaimFlag": "False"
+                  },
+                  "foreclosure": [
+                    {
+                      "sequence": 1
+                    }
+                  ],
+                  "saleHistory": [
+                    {
+                      "sequence": 1,
+                      "saleSearchDate": "2016-5-18",
+                      "saleTransDate": "2016-5-18",
+                      "transactionIdent": "577995344",
+                      "armsLengthIdent": "0",
+                      "recorderThroughDate": "2018-7-5",
+                      "buyerName": "ZOCK,JENNIFER & LAWRENCE TRUST",
+                      "deedInLieuOfIndicator": "N",
+                      "amount": {
+                        "saleAmt": 0,
+                        "saleDisclosureType": 0,
+                        "saleDocNum": "1622362081",
+                        "saleTransType": "Stand Alone Finance",
+                        "propIndicator": 10,
+                        "deedType": "MG"
+                      },
+                      "title": {},
+                      "mortgage": {
+                        "FirstConcurrent": {
+                          "trustDeedDocumentNumber": "1622362081",
+                          "amount": 100000,
+                          "lenderLastName": "BMO HARRIS BK NA",
+                          "companyCode": "86692",
+                          "date": "2016-8-10",
+                          "interestRate": "3",
+                          "loanTypeCode": "REV",
+                          "term": "360",
+                          "dueDate": "2046-8-10",
+                          "interestRateType": "ADJ",
+                          "equityFlag": "R",
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "SecondConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "ThirdConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        }
+                      }
+                    },
+                    {
+                      "sequence": 2,
+                      "saleSearchDate": "2014-6-9",
+                      "saleTransDate": "2014-6-9",
+                      "transactionIdent": "416930621",
+                      "armsLengthIdent": "0",
+                      "recorderThroughDate": "2018-7-5",
+                      "buyerName": "ZOCK,LAWRENCE TRUST",
+                      "sellerName": "ZOCK,LAWRENCE & DOROTHY",
+                      "deedInLieuOfIndicator": "N",
+                      "amount": {
+                        "saleAmt": 560000,
+                        "saleRecDate": "2014-6-12",
+                        "saleDisclosureType": 0,
+                        "saleDocNum": "1416355003",
+                        "saleTransType": "Resale",
+                        "propIndicator": 10,
+                        "deedType": "WD"
+                      },
+                      "title": {},
+                      "mortgage": {
+                        "FirstConcurrent": {
+                          "trustDeedDocumentNumber": "1416355004",
+                          "amount": 350000,
+                          "lenderLastName": "BMO HARRIS BK NA",
+                          "companyCode": "86692",
+                          "date": "2014-6-12",
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "SecondConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "ThirdConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        }
+                      }
+                    },
+                    {
+                      "sequence": 3,
+                      "saleSearchDate": "2005-2-9",
+                      "saleTransDate": "2005-2-9",
+                      "transactionIdent": "155374227",
+                      "armsLengthIdent": "0",
+                      "recorderThroughDate": "2018-7-5",
+                      "buyerName": "ZOCK,LAWRENCE & DOROTHY",
+                      "deedInLieuOfIndicator": "N",
+                      "amount": {
+                        "saleAmt": 0,
+                        "saleDisclosureType": 0,
+                        "saleDocNum": "0507504168",
+                        "saleTransType": "Stand Alone Finance",
+                        "propIndicator": 10,
+                        "deedType": "MG"
+                      },
+                      "title": {
+                        "companyName": "CHICAGO TITLE",
+                        "companyCode": "10"
+                      },
+                      "mortgage": {
+                        "FirstConcurrent": {
+                          "trustDeedDocumentNumber": "0507504168",
+                          "amount": 700000,
+                          "lenderLastName": "HARRIS TRUST & SAVINGS BANK",
+                          "companyCode": "2273",
+                          "date": "2005-3-16",
+                          "loanTypeCode": "REV",
+                          "interestRateType": "ADJ",
+                          "equityFlag": "R",
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "SecondConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "ThirdConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        }
+                      }
+                    }
+                  ],
+                  "owner": {
+                    "type": "INDIVIDUAL",
+                    "description": "Individual",
+                    "owner1": {
+                      "lastname": "ZOCK",
+                      "firstNameAndMi": "LAWRENCE"
+                    },
+                    "owner2": {},
+                    "absenteeOwnerStatus": "O",
+                    "mailingAddressOneLine": "537 PAMELA CIR, HINSDALE IL 605214801"
+                  },
+                  "vintage": {
+                    "lastModified": "2018-1-24",
+                    "pubDate": "2018-2-4"
+                  }
+                }
+              ]
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 77740
+            },
+            "market": {
+              "mktttlvalue": 777400
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "ZOCK",
+              "firstnameandmi": "LAWRENCE"
+            },
+            "owner2": {},
+            "absenteeownerstatus": "O",
+            "mailingaddressoneline": "537 PAMELA CIR, HINSDALE IL 605214801"
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
+        "pagesize": 10,
+        "responseDateTime": "2019-7-21T08:53:15",
+        "transactionID": "91afae24-f3f9-4155-b7e0-f248139bd7bd"
+      },
+      "echoed_fields": {
+        "jobID": "",
+        "loanNumber": "",
+        "preparedBy": "",
+        "resellerID": "",
+        "preparedFor": ""
+      },
+      "property": [
+        {
+          "identifier": {
+            "obPropId": 1479699217031,
+            "fips": "17031",
+            "apn": "18073090410000",
+            "attomID": 14796992
+          },
+          "lot": {
+            "depth": 0,
+            "frontage": 0,
+            "lotsize1": 0.3834,
+            "lotsize2": 16700
+          },
+          "area": {
+            "countrysecsubd": "Cook County"
+          },
+          "address": {
+            "country": "US",
+            "countrySubd": "IL",
+            "line1": "546 PAMELA CIR",
+            "line2": "HINSDALE, IL 60521",
+            "locality": "Hinsdale",
+            "matchCode": "ExaStr",
+            "oneLine": "546 PAMELA CIR, HINSDALE, IL 60521",
+            "postal1": "60521",
+            "postal2": "4802",
+            "postal3": "C051"
+          },
+          "location": {
+            "accuracy": "Street",
+            "elevation": 0,
+            "latitude": "41.789941",
+            "longitude": "-87.915532",
+            "distance": 0,
+            "geoid": "CO17031, CS1745447, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084869, SB0000084874, ZI60521"
+          },
+          "summary": {
+            "absenteeInd": "OWNER OCCUPIED",
+            "propclass": "Single Family Residence / Townhouse",
+            "propsubtype": "HOUSE",
+            "proptype": "SFR",
+            "yearbuilt": 1964,
+            "propLandUse": "SFR",
+            "propIndicator": "10"
+          },
+          "utilities": {
+            "coolingtype": "AC.CENTRAL",
+            "walltype": "BRICK/STONE"
+          },
+          "building": {
+            "size": {
+              "bldgsize": 0,
+              "grosssize": 0,
+              "grosssizeadjusted": 2200,
+              "groundfloorsize": 0,
+              "livingsize": 2200,
+              "sizeInd": "LIVING SQFT ",
+              "universalsize": 2200
+            },
+            "rooms": {
+              "bathstotal": 3,
+              "beds": 4,
+              "roomsTotal": 0
+            },
+            "interior": {
+              "bsmtsize": 0,
+              "fplccount": 1,
+              "fplcind": "Y",
+              "fplctype": "YES"
+            },
+            "parking": {
+              "prkgSize": 0,
+              "prkgType": "GARAGE - ATTACHED"
+            },
+            "summary": {
+              "levels": 1,
+              "storyDesc": "HOUSE",
+              "unitsCount": "1"
+            }
+          },
+          "avm": {
+            "eventDate": "2019-3-22",
+            "amount": {
+              "scr": 75,
+              "value": 875900,
+              "high": 1098000,
+              "low": 682700,
+              "fsd": 25
+            }
+          },
+          "sale": {
+            "buyerName": "ZOCK,LAWRENCE & DOROTHY",
+            "sellerName": "MARSHALL,JASON C & MOLLY E",
+            "salesearchdate": "2010-6-30",
+            "saleTransDate": "2010-6-30",
+            "mortgage": {
+              "FirstConcurrent": {
+                "amount": 0
+              },
+              "SecondConcurrent": {
+                "amount": 0
+              },
+              "ThirdConcurrent": {
+                "amount": 0
+              }
+            },
+            "amount": {
+              "saleamt": 300000,
+              "salerecdate": "2010-7-2",
+              "saledisclosuretype": 0,
+              "saledocnum": "1018329074",
+              "saletranstype": "Resale"
+            },
+            "calculation": {
+              "priceperbed": 0,
+              "pricepersizeunit": 136
+            },
+            "saleHistory": {
+              "status": {
+                "version": "1.0.0",
+                "code": 0,
+                "msg": "SuccessWithResult",
+                "total": 1,
+                "page": 1,
+                "pagesize": 10,
+                "responseDateTime": "2019-7-21T08:56:55",
+                "transactionID": "c62768b4-5b70-4322-a575-2241132aad16"
+              },
+              "echoed_fields": {
+                "jobID": "",
+                "loanNumber": "",
+                "preparedBy": "",
+                "resellerID": "",
+                "preparedFor": ""
+              },
+              "property": [
+                {
+                  "identifier": {
+                    "obPropId": 1479699217031,
+                    "fips": "17031",
+                    "apn": "18073090410000",
+                    "attomId": 14796992
+                  },
+                  "area": {
+                    "blockNum": "9",
+                    "countrySecSubd": "Cook County",
+                    "countyUse1": "2-04",
+                    "munCode": "CO",
+                    "munName": "COOK",
+                    "srvyRange": "12E",
+                    "srvySection": "07",
+                    "srvyTownship": "38N",
+                    "subdName": "A E FOSSIER & COS RESUB",
+                    "subdTractNum": 0,
+                    "taxCodeArea": 21041
+                  },
+                  "address": {
+                    "country": "US",
+                    "countrySubd": "IL",
+                    "line1": "546 PAMELA CIR",
+                    "line2": "HINSDALE, IL 60521",
+                    "locality": "Hinsdale",
+                    "matchCode": "ExaStr",
+                    "oneLine": "546 PAMELA CIR, HINSDALE, IL 60521",
+                    "postal1": "60521",
+                    "postal2": "4802",
+                    "postal3": "C051",
+                    "stateFips": "17"
+                  },
+                  "location": {
+                    "accuracy": "Street",
+                    "elevation": 0,
+                    "latitude": "41.789941",
+                    "longitude": "-87.915532",
+                    "distance": 0,
+                    "geoid": "CO17031, CS1745447, DB1719290, DB1719320, MT30001048, PL1735307, SB0000084866, SB0000084869, SB0000084874, ZI60521"
+                  },
+                  "summary": {
+                    "absenteeInd": "OWNER OCCUPIED",
+                    "propClass": "Single Family Residence / Townhouse",
+                    "propSubType": "HOUSE",
+                    "propType": "SFR",
+                    "yearBuilt": 1964,
+                    "propLandUse": "SFR",
+                    "propIndicator": 10,
+                    "quitClaimFlag": "False"
+                  },
+                  "foreclosure": [
+                    {
+                      "sequence": 1
+                    }
+                  ],
+                  "saleHistory": [
+                    {
+                      "sequence": 1,
+                      "saleSearchDate": "2010-6-30",
+                      "saleTransDate": "2010-6-30",
+                      "transactionIdent": "292171368",
+                      "armsLengthIdent": "1",
+                      "recorderThroughDate": "2018-7-5",
+                      "buyerName": "ZOCK,LAWRENCE & DOROTHY",
+                      "sellerName": "MARSHALL,JASON C & MOLLY E",
+                      "deedInLieuOfIndicator": "N",
+                      "amount": {
+                        "saleAmt": 300000,
+                        "saleRecDate": "2010-7-2",
+                        "saleDisclosureType": 0,
+                        "saleDocNum": "1018329074",
+                        "saleTransType": "Resale",
+                        "propIndicator": 10,
+                        "deedType": "GD"
+                      },
+                      "title": {
+                        "companyName": "PREMIER TITLE",
+                        "companyCode": "61"
+                      },
+                      "mortgage": {
+                        "FirstConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "SecondConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "ThirdConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        }
+                      }
+                    },
+                    {
+                      "sequence": 2,
+                      "saleSearchDate": "2008-12-31",
+                      "saleTransDate": "2008-12-31",
+                      "transactionIdent": "261050859",
+                      "armsLengthIdent": "1",
+                      "recorderThroughDate": "2018-7-5",
+                      "buyerName": "MARSHALL,JASON C & MOLLY E",
+                      "sellerName": "ZOCK,LAWRENCE & DOROTHY",
+                      "sellerCarryBack": "Y",
+                      "deedInLieuOfIndicator": "N",
+                      "amount": {
+                        "saleAmt": 660000,
+                        "saleRecDate": "2009-1-7",
+                        "saleDisclosureType": 0,
+                        "saleDocNum": "0900741020",
+                        "saleTransType": "Resale",
+                        "propIndicator": 10,
+                        "deedType": "WD"
+                      },
+                      "title": {
+                        "companyName": "PREMIER TITLE",
+                        "companyCode": "61"
+                      },
+                      "mortgage": {
+                        "FirstConcurrent": {
+                          "amount": 594432,
+                          "lenderFirstName": "LAWRENCE & DOROTHY",
+                          "lenderLastName": "ZOCK",
+                          "date": "2009-1-7",
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "SecondConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "ThirdConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        }
+                      }
+                    },
+                    {
+                      "sequence": 3,
+                      "saleSearchDate": "2007-6-5",
+                      "saleTransDate": "2007-6-5",
+                      "transactionIdent": "224604516",
+                      "armsLengthIdent": "1",
+                      "recorderThroughDate": "2018-7-5",
+                      "buyerName": "ZOCK,LAWRENCE & DOROTHY",
+                      "sellerName": "LUVISI,GEORGE & JEAN",
+                      "deedInLieuOfIndicator": "N",
+                      "amount": {
+                        "saleAmt": 665000,
+                        "saleRecDate": "2007-8-7",
+                        "saleDisclosureType": 0,
+                        "saleDocNum": "0721957010",
+                        "saleTransType": "Resale",
+                        "propIndicator": 10,
+                        "deedType": "GD"
+                      },
+                      "title": {
+                        "companyName": "GREATER ILLINOIS TITLE",
+                        "companyCode": "774"
+                      },
+                      "mortgage": {
+                        "FirstConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "SecondConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        },
+                        "ThirdConcurrent": {
+                          "amount": 0,
+                          "interestMargin": "0",
+                          "mortgageInterestIndex": "0.00",
+                          "mortgageInterestRateMax": 0
+                        }
+                      }
+                    }
+                  ],
+                  "owner": {
+                    "type": "INDIVIDUAL",
+                    "description": "Individual",
+                    "owner1": {
+                      "lastname": "ZOCK",
+                      "firstNameAndMi": "LAWRENCE"
+                    },
+                    "owner2": {
+                      "lastname": "ZOCK",
+                      "firstNameAndMi": "D"
+                    },
+                    "absenteeOwnerStatus": "O",
+                    "mailingAddressOneLine": "546 PAMELA CIR, HINSDALE IL 605214802"
+                  },
+                  "vintage": {
+                    "lastModified": "2018-1-24",
+                    "pubDate": "2018-2-4"
+                  }
+                }
+              ]
+            }
+          },
+          "assessment": {
+            "assessed": {
+              "assdttlvalue": 81666
+            },
+            "market": {
+              "mktttlvalue": 816660
+            }
+          },
+          "owner": {
+            "owner1": {
+              "lastname": "ZOCK",
+              "firstnameandmi": "LAWRENCE"
+            },
+            "owner2": {
+              "lastname": "ZOCK",
+              "firstnameandmi": "D"
+            },
+            "absenteeownerstatus": "O",
+            "mailingaddressoneline": "546 PAMELA CIR, HINSDALE IL 605214802"
+          }
+        }
+      ]
+    },
+    {
+      "status": {
+        "version": "1.0.0",
+        "code": 0,
+        "msg": "SuccessWithResult",
+        "total": 1,
+        "page": 1,
         "pagesize": 10
       },
       "property": [
